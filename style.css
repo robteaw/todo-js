@@ -1,52 +1,54 @@
 :root {
-  --dark: #374151;
-  --darker: #1F2937;
-  --darkest: #111827;
-  --gray: #6B7280;
-  --light: #EEE;
-  --pink: #EC4899;
-  --purple: #8B5Cf6;
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: 'Fira sans', sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh(--dark);
-  color: #fff;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--dark);
 }
 
 header {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: 0 auto;
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  color: --gray;
-  margin-bottom: 1rem;
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 1rem;
 }
 
 #new-task-form {
-  display: flex;
+	display: flex;;
 }
 
 input, button {
-  appearance: none;
-  border: none;
-  outline: none;
-  background: none;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
 }
 
 #new-task-input {
-  flex: 1 1 0%;
+	flex: 1 1 0%;
 	background-color: var(--darker);
 	padding: 1rem;
 	border-radius: 1rem;
